@@ -105,13 +105,6 @@ save_path  = current_dir + '/annotations'            # output directory
 > `save_path` from the global `__main__` scope. Adjust the function if you need a
 > different output name or want to convert the training split.
 
-## Integration with Training
-
-This dataset is consumed by the SpikeYOLO distillation training scripts
-(`train_distill_for_v5.py`, `train_distill_for_v8.py`) under `SpikeYOLO-main/`, which
-reference `ultralytics/cfg/datasets/RanFH.yaml`. The SNR-wise validation logic in those
-scripts groups `val` images by the `SNR_<db>` prefix in the file name.
-
 ## License
 
 Specify the dataset license before public release.
