@@ -1,6 +1,6 @@
 # RanFH_coco
 
-A YOLO-format object detection dataset for **Faint Handwriting (FH)** signal detection in
+A YOLO-format object detection dataset for **frequency-hopping (FH)** signal detection in
 low-SNR (signal-to-noise ratio) images, together with a conversion tool that produces
 COCO-format annotations for evaluation.
 
@@ -44,7 +44,7 @@ Training images are roughly 240–258 per SNR level (~4,220 total).
 
 ### Classes
 
-Single class: `FH` (faint handwriting signal). `classes.txt` contains one line:
+Single class: `FH` (frequency-hopping signal). `classes.txt` contains one line:
 
 ```
 FH
@@ -77,7 +77,7 @@ labels and writes a COCO-style dictionary with the standard `images`, `categorie
 (top-left corner). Categories:
 
 ```json
-{ "id": 1, "name": "FH", "supercategory": "Positive Cell" }
+{ "id": 1, "name": "FH", "supercategory": "FH" }
 ```
 
 ## Using the COCO Converter
